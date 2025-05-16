@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends Engineering Works - Industrial Solutions & Fabrication Experts in Karachi</title>
-    <meta name="description" content="20+ years experience in welding, solar installations, industrial trolleys & engineering solutions in Karachi. Call 0300-2602427">
+    <title>Friends Engineering Works - Industrial Fabrication Experts in Karachi</title>
+    <meta name="description" content="20+ years experience in industrial fabrication, welding, solar structures & engineering solutions in Karachi. Call 0300-2602427">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <style>
         .hero-gradient {
             background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
@@ -29,6 +30,13 @@
             width: 100%;
             height: 100%;
             border: none;
+        }
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
@@ -59,25 +67,65 @@
     </div>
 </nav>
 
-<!-- Hero Section -->
-<section id="home" class="hero-gradient text-white py-20">
-    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 mb-10 md:mb-0">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Industrial Fabrication Experts in Karachi</h1>
-            <p class="text-xl mb-8">20+ years delivering precision welding, solar structures & custom industrial solutions</p>
-            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-md font-medium text-center hover:bg-gray-100 transition">
-                    Get Free Consultation
-                </a>
-                <a href="tel:03002602427" class="bg-transparent border-2 border-white px-6 py-3 rounded-md font-medium text-center hover:bg-white hover:text-blue-600 transition">
-                    <i class="fas fa-phone mr-2"></i> 0300-2602427
-                </a>
+<!-- Hero Slider Section -->
+<section id="home" class="relative">
+    <div class="swiper heroSwiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="hero-overlay">
+                    <div class="container mx-auto px-4 py-32 text-white relative z-10">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Industrial Fabrication Experts in Karachi</h1>
+                        <p class="text-xl mb-8 max-w-2xl">20+ years delivering precision welding, solar structures & custom industrial solutions since 2004</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium text-center transition">
+                                Get Free Consultation
+                            </a>
+                            <a href="tel:03002602427" class="bg-transparent border-2 border-white px-6 py-3 rounded-md font-medium text-center hover:bg-white hover:text-blue-600 transition">
+                                <i class="fas fa-phone mr-2"></i> 0300-2602427
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="hero-overlay">
+                    <div class="container mx-auto px-4 py-32 text-white relative z-10">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Custom Industrial Fabrication</h1>
+                        <p class="text-xl mb-8 max-w-2xl">Specializing in precision welding for machinery, structural frameworks, and custom metal parts (4mm-125mm thickness)</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium text-center transition">
+                                Our Services
+                            </a>
+                            <a href="https://wa.me/923002602427" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-md font-medium text-center transition">
+                                <i class="fab fa-whatsapp mr-2"></i> Chat Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="hero-overlay">
+                    <div class="container mx-auto px-4 py-32 text-white relative z-10">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4">Solar Structure Solutions</h1>
+                        <p class="text-xl mb-8 max-w-2xl">Robust mounting systems for residential and commercial solar installations designed for Karachi's climate</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="#products" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium text-center transition">
+                                Our Products
+                            </a>
+                            <a href="tel:03002602427" class="bg-transparent border-2 border-white px-6 py-3 rounded-md font-medium text-center hover:bg-white hover:text-blue-600 transition">
+                                Call for Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="md:w-1/2 flex justify-center">
-            <img src="https://dbdesigner-net.nyc3.digitaloceanspaces.com/9545426.jpg"
-                 alt="Engineering Workshop in Karachi" class="rounded-lg shadow-2xl max-w-full h-auto">
-        </div>
+        <div class="swiper-pagination"></div>
     </div>
 </section>
 
@@ -85,16 +133,16 @@
 <section id="services" class="py-16 bg-white">
     <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-4">Our Engineering Services</h2>
-        <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Serving Karachi's industrial sector with reliable fabrication solutions since 2003</p>
+        <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Comprehensive fabrication solutions serving Karachi's industrial sector since 2004</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Service 1 -->
             <div class="service-card bg-white rounded-lg shadow-md p-6 border border-gray-100 transition duration-300">
                 <div class="text-blue-600 mb-4">
-                    <i class="fas fa-wrench text-4xl"></i>
+                    <i class="fas fa-industry text-4xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Industrial Welding</h3>
-                <p class="text-gray-600">Precision welding for machinery, structural frames, and custom metal fabrication with MS plates (4mm-125mm).</p>
+                <h3 class="text-xl font-bold mb-3">Industrial Fabrication</h3>
+                <p class="text-gray-600">High-precision welding for machinery, custom metal parts, and structural frameworks with mild steel plates (4mm-125mm thickness).</p>
             </div>
 
             <!-- Service 2 -->
@@ -109,28 +157,28 @@
             <!-- Service 3 -->
             <div class="service-card bg-white rounded-lg shadow-md p-6 border border-gray-100 transition duration-300">
                 <div class="text-blue-600 mb-4">
-                    <i class="fas fa-tools text-4xl"></i>
+                    <i class="fas fa-warehouse text-4xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Workshop Equipment</h3>
-                <p class="text-gray-600">Custom fabrication of trolleys, workbenches, storage solutions, and motor rewinding services.</p>
+                <h3 class="text-xl font-bold mb-3">Warehouse Solutions</h3>
+                <p class="text-gray-600">Specialized sorting trolleys, picking stations, and material handling systems optimized for factory operations.</p>
             </div>
 
             <!-- Service 4 -->
             <div class="service-card bg-white rounded-lg shadow-md p-6 border border-gray-100 transition duration-300">
                 <div class="text-blue-600 mb-4">
-                    <i class="fas fa-industry text-4xl"></i>
+                    <i class="fas fa-tools text-4xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Warehouse Solutions</h3>
-                <p class="text-gray-600">Specialized sorting trolleys, picking stations, and material handling systems for factories.</p>
+                <h3 class="text-xl font-bold mb-3">Workshop Equipment</h3>
+                <p class="text-gray-600">Custom fabrication of trolleys, workbenches, storage units, and precision lathe services for industrial maintenance.</p>
             </div>
 
             <!-- Service 5 -->
             <div class="service-card bg-white rounded-lg shadow-md p-6 border border-gray-100 transition duration-300">
                 <div class="text-blue-600 mb-4">
-                    <i class="fas fa-table text-4xl"></i>
+                    <i class="fas fa-couch text-4xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Custom Furniture</h3>
-                <p class="text-gray-600">Industrial-grade work tables, security desks, and office furniture with metal frames.</p>
+                <h3 class="text-xl font-bold mb-3">Industrial Furniture</h3>
+                <p class="text-gray-600">Heavy-duty work tables, security desks, and office furniture with durable metal frames for industrial environments.</p>
             </div>
 
             <!-- Service 6 -->
@@ -139,18 +187,18 @@
                     <i class="fas fa-cog text-4xl"></i>
                 </div>
                 <h3 class="text-xl font-bold mb-3">Repair & Maintenance</h3>
-                <p class="text-gray-600">Motor rewinding, equipment repair, and industrial card maintenance services.</p>
+                <p class="text-gray-600">Lathe machining services and specialized maintenance for industrial machinery to minimize downtime.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Products Showcase -->
-<section class="py-16 bg-blue-50">
+<section id="products" class="py-16 bg-blue-50">
     <div class="container mx-auto px-4">
         <div class="text-center mb-12">
             <h2 class="text-3xl font-bold mb-4">Our Fabrication Portfolio</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">Trusted by industries across Karachi for durable, custom-engineered solutions</p>
+            <p class="text-gray-600 max-w-2xl mx-auto">Custom-engineered solutions trusted by industries across Karachi</p>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -184,10 +232,10 @@
             <p class="text-gray-600 mb-4">We fabricate 100+ industrial products including:</p>
             <div class="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
                 <span class="bg-white px-3 py-1 rounded-full text-sm shadow-sm">Powder-Coated Trolleys</span>
-                <span class="bg-white px-3 py-1 rounded-full text-sm shadow-sm">Motor Rewinding</span>
                 <span class="bg-white px-3 py-1 rounded-full text-sm shadow-sm">Security Tables</span>
                 <span class="bg-white px-3 py-1 rounded-full text-sm shadow-sm">Sorting Systems</span>
                 <span class="bg-white px-3 py-1 rounded-full text-sm shadow-sm">MS Plate Fabrication</span>
+                <span class="bg-white px-3 py-1 rounded-full text-sm shadow-sm">Industrial Workbenches</span>
             </div>
         </div>
     </div>
@@ -200,13 +248,13 @@
             <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
                 <h2 class="text-3xl font-bold mb-6">About Our Workshop</h2>
                 <p class="text-gray-600 mb-4">
-                    Established in Korangi Industrial Area, Friends Engineering Works has been serving Karachi's manufacturing and warehouse sectors since 2003.
+                    Established in 2004, Friends Engineering Works has been at the forefront of industrial fabrication in Karachi, located in the heart of the Korangi Industrial Area.
                 </p>
                 <p class="text-gray-600 mb-4">
-                    Our 2,000 sqft workshop is equipped with modern welding tools, lathe machines, and fabrication equipment to handle projects of any scale.
+                    Our 2,000 sqft facility is equipped with modern welding tools, advanced lathe machines, and state-of-the-art fabrication equipment to handle projects of any scale.
                 </p>
                 <p class="text-gray-600 mb-6">
-                    We take pride in our team of certified welders and engineers who combine traditional craftsmanship with technical expertise.
+                    Our team of certified welders and engineers combines traditional craftsmanship with technical expertise to deliver superior quality and reliability.
                 </p>
 
                 <div class="grid grid-cols-2 gap-4">
@@ -219,80 +267,83 @@
                     </div>
                     <div class="bg-blue-50 p-4 rounded-lg">
                         <div class="text-blue-600 mb-2">
-                            <i class="fas fa-users text-2xl"></i>
+                            <i class="fas fa-user-tie text-2xl"></i>
                         </div>
-                        <h4 class="font-bold mb-1">Client-Focused</h4>
+                        <h4 class="font-bold mb-1">Experienced Team</h4>
+                        <p class="text-sm text-gray-600">20+ years of local expertise</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <div class="text-blue-600 mb-2">
+                            <i class="fas fa-clock text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold mb-1">Timely Delivery</h4>
+                        <p class="text-sm text-gray-600">Projects completed on schedule</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <div class="text-blue-600 mb-2">
+                            <i class="fas fa-thumbs-up text-2xl"></i>
+                        </div>
+                        <h4 class="font-bold mb-1">Client Focused</h4>
                         <p class="text-sm text-gray-600">Custom solutions for each project</p>
                     </div>
                 </div>
             </div>
             <div class="lg:w-1/2">
                 <div class="map-container">
-
-
                     <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.8951538919328!2d67.1146393!3d24.8332589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33b96f756813d%3A0x3895722b3cc1a3a1!2sFriends%20Engineering%20Works!5e0!3m2!1sen!2s!4v1747349114855!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="mt-4 flex items-center text-gray-600">
                     <i class="fas fa-map-marker-alt text-red-500 mr-2"></i>
-                    <span>Allah Wala Town Sector 31 C1 Korangi, Karachi, 74900</span>
+                    <span>Allah Wala Town, Sector 31 C1, Korangi, Karachi</span>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-16 bg-gray-50">
+<!-- Why Choose Us Section -->
+<section class="py-16 bg-gray-100">
     <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-4">Get in Touch</h2>
-        <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Contact us for quotes or visit our Korangi workshop</p>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Why Choose Friends Engineering Works?</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">We combine technical expertise with customer-focused service for your fabrication needs</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-history text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Proven Local Expertise</h3>
+                <p class="text-gray-600">With over 20 years serving Karachi's industrial sector, we've established a strong reputation for reliability and skilled workmanship.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-list-check text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Comprehensive Services</h3>
+                <p class="text-gray-600">From precise welding to advanced fabrication, repair, and custom furniture manufacturing - we cover all industrial needs.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-blue-600 mb-4">
+                    <i class="fas fa-handshake text-3xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Customer-Centric Approach</h3>
+                <p class="text-gray-600">We pride ourselves on flexibility, attention to requirements, and delivering unique custom solutions on time and within budget.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-4">Contact Our Workshop</h2>
+        <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">Reach out for quotes or visit our Korangi workshop for consultations</p>
 
         <div class="flex flex-col lg:flex-row gap-8">
-            <div class="lg:w-1/2 bg-white p-8 rounded-lg shadow-md opacity-50 cursor-not-allowed">
-                <h3 class="text-xl font-bold mb-6">Send Project Details</h3>
-                <form>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        <div>
-                            <label for="name" class="block text-gray-700 mb-2">Name*</label>
-                            <input type="text" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label for="company" class="block text-gray-700 mb-2">Company</label>
-                            <input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        <div>
-                            <label for="email" class="block text-gray-700 mb-2">Email*</label>
-                            <input type="email" id="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-gray-700 mb-2">Phone*</label>
-                            <input type="tel" id="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <label for="service" class="block text-gray-700 mb-2">Service Needed*</label>
-                        <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <option value="">Select Service</option>
-                            <option value="welding">Welding & Fabrication</option>
-                            <option value="solar">Solar Structures</option>
-                            <option value="trolleys">Industrial Trolleys</option>
-                            <option value="tables">Work Tables</option>
-                            <option value="repair">Equipment Repair</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="mb-4">
-                        <label for="message" class="block text-gray-700 mb-2">Project Details*</label>
-                        <textarea id="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                    </div>
-                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium w-full transition">
-                        Request Quote
-                    </button>
-                </form>
-            </div>
-
             <div class="lg:w-1/2">
                 <div class="bg-white p-8 rounded-lg shadow-md mb-6">
                     <h3 class="text-xl font-bold mb-4">Contact Information</h3>
@@ -303,7 +354,7 @@
                             </div>
                             <div>
                                 <h4 class="font-medium text-gray-800">Workshop Address</h4>
-                                <p class="text-gray-600">Allah Wala Town Sector 31 C1 Korangi, Karachi</p>
+                                <p class="text-gray-600">Allah Wala Town, Sector 31 C1, Korangi, Karachi</p>
                                 <a href="https://g.co/kgs/6RDS9mP" class="text-blue-500 text-sm mt-1 inline-block hover:underline">View on Google Maps</a>
                             </div>
                         </div>
@@ -343,15 +394,11 @@
                 </div>
 
                 <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
-                    <h4 class="font-bold text-lg mb-3 text-blue-800">Why Choose Us?</h4>
+                    <h4 class="font-bold text-lg mb-3 text-blue-800">Ready to Start Your Project?</h4>
                     <ul class="space-y-3">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                            <span class="text-gray-700">20+ years local experience in Karachi</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                            <span class="text-gray-700">On-site measurements and consultations</span>
+                            <span class="text-gray-700">On-site measurements and consultations available</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
@@ -359,9 +406,27 @@
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
-                            <span class="text-gray-700">Timely project completion</span>
+                            <span class="text-gray-700">Timely project completion guaranteed</span>
                         </li>
                     </ul>
+                    <div class="mt-4">
+                        <a href="tel:03002602427" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium w-full block text-center transition">
+                            Call Now for Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="lg:w-1/2">
+                <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                    <h3 class="text-xl font-bold mb-6">Visit Our Workshop</h3>
+                    <div class="map-container">
+                        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.8951538919328!2d67.1146393!3d24.8332589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33b96f756813d%3A0x3895722b3cc1a3a1!2sFriends%20Engineering%20Works!5e0!3m2!1sen!2s!4v1747349114855!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="mt-4">
+                        <h4 class="font-medium text-gray-800 mb-2">Directions to Our Workshop</h4>
+                        <p class="text-gray-600 text-sm">Our facility is located in the Korangi Industrial Area, easily accessible from all parts of Karachi. Look for our signage in Allah Wala Town, Sector 31 C1.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -379,7 +444,7 @@
                     </div>
                     Friends Engineering Works
                 </h3>
-                <p class="text-gray-400 mb-4">Karachi's trusted fabrication workshop since 2003</p>
+                <p class="text-gray-400 mb-4">Karachi's trusted fabrication partner since 2004</p>
                 <div class="flex space-x-4">
                     <a href="https://wa.me/923002602427" class="text-gray-400 hover:text-green-400 transition">
                         <i class="fab fa-whatsapp text-xl"></i>
@@ -407,20 +472,20 @@
             <div>
                 <h3 class="text-lg font-bold mb-4">Our Services</h3>
                 <ul class="space-y-2">
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Industrial Welding</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Solar Structures</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Warehouse Trolleys</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Work Tables</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition">Equipment Repair</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition">Industrial Fabrication</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition">Solar Structures</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition">Warehouse Solutions</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition">Workshop Equipment</a></li>
+                    <li><a href="#services" class="text-gray-400 hover:text-white transition">Repair & Maintenance</a></li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="text-lg font-bold mb-4">Visit Our Workshop</h3>
+                <h3 class="text-lg font-bold mb-4">Workshop Location</h3>
                 <div class="flex items-start mb-3">
                     <i class="fas fa-map-marker-alt text-gray-400 mr-3 mt-1"></i>
                     <a href="https://g.co/kgs/6RDS9mP" class="text-gray-400 hover:text-white transition">
-                        Allah Wala Town Sector 31 C1 Korangi, Karachi
+                        Allah Wala Town, Sector 31 C1, Korangi, Karachi
                     </a>
                 </div>
                 <div class="flex items-start mb-3">
@@ -440,7 +505,7 @@
 
         <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
             <p>&copy; <span id="currentYear"></span> Friends Engineering Works. All rights reserved.</p>
-            <p class="text-sm mt-2">Serving Karachi's industrial sector since 2003</p>
+            <p class="text-sm mt-2">Serving Karachi's industrial sector since 2004</p>
         </div>
     </div>
 </footer>
@@ -450,13 +515,30 @@
     <i class="fab fa-whatsapp text-2xl"></i>
 </a>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
+    // Initialize Hero Swiper
+    const heroSwiper = new Swiper('.heroSwiper', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        // You can add background images to each slide when you have them
+        // by adding style="background-image: url('your-image.jpg')" to each slide
+    });
+
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
     // Mobile menu toggle functionality would go here
     document.addEventListener('DOMContentLoaded', function() {
         // Future JavaScript for interactive elements
     });
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-
 </script>
 </body>
 </html>
